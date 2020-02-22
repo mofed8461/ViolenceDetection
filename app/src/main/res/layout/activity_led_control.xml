@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.danyal.bluetoothhc05.ledControl">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <TextView
+                android:id="@+id/preventText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="10pt"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/passwordLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="كلمة المرور"
+                android:textSize="7pt" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="7"
+                android:inputType="textPassword"
+                android:text="" />
+
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=".." />
+
+            <TextView
+                android:id="@+id/lbl0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="اسمي"
+                android:textSize="7pt" />
+
+            <EditText
+                android:id="@+id/myName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="7"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/lbl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="رقم الجوال الاول"
+                android:textSize="7pt" />
+
+            <EditText
+                android:id="@+id/phone1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="7"
+                android:inputType="phone" />
+
+            <TextView
+                android:id="@+id/lbl2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="رقم الجوال الثاني"
+                android:textSize="7pt" />
+
+            <EditText
+                android:id="@+id/phone2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="7"
+                android:inputType="phone" />
+
+            <TextView
+                android:id="@+id/lbl3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="رقم الجوال الثالث"
+                android:textSize="7pt" />
+
+            <EditText
+                android:id="@+id/phone3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="7"
+                android:inputType="phone" />
+
+            <Button
+                android:id="@+id/changePhones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="تعديل" />
+
+            <TextView
+                android:id="@+id/lbl4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="كلمة المرور الجديدة"
+                android:textSize="7pt" />
+
+            <EditText
+                android:id="@+id/newPasswordText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="7"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/savePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="تعديل كلمة المرور" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.ConstraintLayout>
