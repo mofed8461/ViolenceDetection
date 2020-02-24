@@ -22,7 +22,7 @@ import java.util.UUID;
 
 public class ledControl extends AppCompatActivity {
 
-    Button cancelButton, saveButton, savePasswordButton;
+    Button cancelButton, saveButton, savePasswordButton, go;
     String address = null;
     TextView preventText;
     TextView password, newPasswordText;
@@ -263,6 +263,15 @@ public class ledControl extends AppCompatActivity {
         SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", 0); // 0 - for private mode
 
         defaultActivity = this;
+        go = findViewById(R.id.button2);
+
+        go.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = getPackageManager().getLaunchIntentForPackage("com.example.studentquestions");
+                startActivity(intent);
+            }
+        });
 
         lbl = new TextView[5];
         lbl[0] = (TextView) findViewById(R.id.lbl0);

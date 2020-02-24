@@ -18,7 +18,7 @@ import java.util.Set;
 
 public class DeviceList extends AppCompatActivity {
 
-    Button btnPaired;
+    Button btnPaired, go;
     ListView devicelist;
 
     private BluetoothAdapter myBluetooth = null;
@@ -32,6 +32,16 @@ public class DeviceList extends AppCompatActivity {
 
         btnPaired = (Button) findViewById(R.id.button);
         devicelist = (ListView) findViewById(R.id.listView);
+        go = findViewById(R.id.button1);
+
+        go.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = getPackageManager().getLaunchIntentForPackage("com.example.studentquestions");
+                startActivity(intent);
+            }
+        });
+
 
         myBluetooth = BluetoothAdapter.getDefaultAdapter();
         if ( myBluetooth==null ) {
